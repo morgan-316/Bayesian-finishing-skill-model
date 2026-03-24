@@ -32,6 +32,8 @@ Raw goal tallies and G/xG ratios are noisy signals. A player who scores 18 goals
 ### 2. Finishing Persistence Test
 Before modelling, year-on-year G/xG correlation is measured across consecutive seasons. The weak result (r = 0.14) confirms that raw finishing ratios are heavily noise-driven — motivating a shrinkage-based approach over naive G/xG comparisons.
 
+![Finishing Persistence](assets/finishing_persistence.png)
+
 ### 3. Baseline Model
 xG used as a direct predictor of non-penalty goals, assuming all players finish at the league average rate. Establishes the MAE/RMSE benchmark.
 
@@ -56,6 +58,8 @@ Models compared using MAE, RMSE, and LOO-CV (ELPD).
 | Negative Binomial | 1.865 | 2.458 | −1896.24 |
 | **Poisson hierarchical** | **1.839** | **2.417** | **−1845.34** |
 
+![Predicted vs Actual Goals with Confidence Intervals](assets/predicted_vs_actual_with_confidence_intervals.png)
+
 ### 6. Player Profiling
 Shot volume (shots/90) vs shot quality (xG/shot) scatter, coloured by posterior α, allowing players to be characterised across three dimensions simultaneously — useful for distinguishing high-volume scorers from elite chance-selectors from genuine finishers.
 
@@ -68,7 +72,13 @@ Players are ranked by posterior mean α with 80% credible intervals. Wide interv
 **Top finishers (selected):** Son Heung-Min, Kevin De Bruyne, Harry Kane, Eden Hazard  
 **Bottom finishers (selected):** Gabriel Jesus, Neal Maupay, Kai Havertz, Dominic Calvert-Lewin
 
-The finishing ability vs estimation uncertainty plot (Section 8) is particularly useful for recruitment: it surfaces both the signal *and* the confidence in that signal for every player in the dataset.
+![Top 15 Finishers](assets/top_15_finishers.png)
+
+![Bottom 15 Finishers](assets/bottom_15_finishers.png)
+
+The finishing ability vs estimation uncertainty plot below is particularly useful for recruitment: it surfaces both the signal *and* the confidence in that signal for every player in the dataset.
+
+![Finishing Ability vs Estimation Uncertainty](assets/finishing_ability_chart.png)
 
 ---
 
