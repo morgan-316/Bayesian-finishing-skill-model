@@ -117,12 +117,12 @@ scikit-learn    — MAE / RMSE evaluation
 ```bash
 # Clone and set up environment
 git clone https://github.com/morgan-316/Bayesian-finishing-skill-model.git
-cd bayesian-finishing-model
+cd Bayesian-finishing-skill-model
 
 pip install pymc arviz pandas numpy matplotlib plotly scikit-learn
 
 # Add player.csv to data/ then launch
-jupyter notebook FinishingForecast.ipynb
+jupyter notebook "Quantifying Finishing Ability.ipynb"
 ```
 
 > PyMC sampling is computationally intensive. Expect ~5–10 minutes per model on a standard laptop. `random_seed=42` is set throughout for reproducibility.
