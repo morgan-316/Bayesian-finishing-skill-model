@@ -116,7 +116,7 @@ scikit-learn    — MAE / RMSE evaluation
 
 ```bash
 # Clone and set up environment
-git clone https://github.com/<your-username>/bayesian-finishing-model.git
+git clone https://github.com/morgan-316/Bayesian-finishing-skill-model.git
 cd bayesian-finishing-model
 
 pip install pymc arviz pandas numpy matplotlib plotly scikit-learn
