@@ -13,8 +13,12 @@ Raw goal tallies and G/xG ratios are noisy signals. A player who scores 18 goals
 ```
 ├── Quantifying Finishing Ability.ipynb   # Full modelling pipeline (see sections below)
 ├── README.md
-└── data/
-    └── player.csv            # Understat EPL player data (Kaggle) — add locally, not tracked
+└── assets/
+    ├── finishing_persistence.png
+    ├── predicted_vs_actual_with_confidence_intervals.png
+    ├── top_15_finishers.png
+    ├── bottom_15_finishers.png
+    └── finishing_ability_chart.png
 ```
 
 > **Note:** `player.csv` is not included in this repo. Download the Understat EPL dataset from [Kaggle](https://www.kaggle.com/) and place it in `data/` before running.
