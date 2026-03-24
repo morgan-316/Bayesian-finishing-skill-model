@@ -5,16 +5,17 @@ Bayesian hierarchical model to separate finishing skill from xG and identify sus
 Raw goal tallies and G/xG ratios are noisy signals. A player who scores 18 goals from 12 xG in one season is more likely regressing to the mean than a genuine elite finisher — but how much more likely? This project builds a principled statistical framework to answer that, using partial pooling to shrink low-sample player estimates toward the league average while allowing high-exposure players to deviate with confidence.
 
 **Key finding:** Finishing skill is real but small. Even the highest-ranked finisher in the model (Son Heung-Min) is estimated to be only ~6.6% more clinical than a league-average player. Chance quality (xG) remains the dominant driver of goalscoring output — with significant implications for how recruitment departments should interpret short-term xG overperformance.
----
-├── Quantifying Finishing Ability.ipynb
-├── README.md
-└── assets/
-    ├── finishing_persistence.png
-    ├── predicted_vs_actual_with_confidence_intervals.png
-    ├── top_15_finishers.png
-    ├── bottom_15_finishers.png
-    └── finishing_ability_chart.png
 
+---
+
+## Repo Structure
+
+```
+├── Quantifying Finishing Ability.ipynb   # Full modelling pipeline (see sections below)
+├── README.md
+└── data/
+    └── player.csv            # Understat EPL player data (Kaggle) — add locally, not tracked
+```
 
 > **Note:** `player.csv` is not included in this repo. Download the Understat EPL dataset from [Kaggle](https://www.kaggle.com/) and place it in `data/` before running.
 
