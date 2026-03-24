@@ -11,7 +11,7 @@ Raw goal tallies and G/xG ratios are noisy signals. A player who scores 18 goals
 ## Repo Structure
 
 ```
-├── FinishingForecast.ipynb   # Full modelling pipeline (see sections below)
+├── Quantifying Finishing Ability.ipynb   # Full modelling pipeline (see sections below)
 ├── README.md
 └── data/
     └── player.csv            # Understat EPL player data (Kaggle) — add locally, not tracked
