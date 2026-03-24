@@ -7,7 +7,6 @@ Raw goal tallies and G/xG ratios are noisy signals. A player who scores 18 goals
 **Key finding:** Finishing skill is real but small. Even the highest-ranked finisher in the model (Son Heung-Min) is estimated to be only ~6.6% more clinical than a league-average player. Chance quality (xG) remains the dominant driver of goalscoring output — with significant implications for how recruitment departments should interpret short-term xG overperformance.
 
 ---
-
 ├── Quantifying Finishing Ability.ipynb
 ├── README.md
 └── assets/
